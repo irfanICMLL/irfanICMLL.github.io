@@ -1,188 +1,333 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  <title>IrfanICMLL</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Machine learning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IrfanICMLL">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="IrfanICMLL">
-<meta property="og:description" content="Machine learning">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IrfanICMLL">
-<meta name="twitter:description" content="Machine learning">
-  
-    <link rel="alternate" href="/atom.xml" title="IrfanICMLL" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Yifan Liu</title>
+	<meta content="Yifan Liu, irfanICMLL.github.io" name="keywords" />
+	<style media="screen" type="text/css">html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0pt none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0pt;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: 0pt;
+  padding: 0pt;
+  vertical-align: baseline;
+}
 
+a {
+  color: #1772d0;
+  text-decoration:none;
+}
+
+a:focus, a:hover {
+  color: #f09228;
+  text-decoration:none;
+}
+
+a.paper {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+b.paper {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+* {
+  margin: 0pt;
+  padding: 0pt;
+}
+
+body {
+  position: relative;
+  margin: 3em auto 2em auto;
+  width: 800px;
+  font-family: Lato, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #eee;
+}
+
+h2 {
+  font-family: Lato, Verdana, Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: Lato, Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+strong {
+  font-family: Lato, Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight:bold;
+}
+
+ul { 
+  list-style: circle;
+}
+
+img {
+  border: none;
+}
+
+li {
+  padding-bottom: 0.5em;
+  margin-left: 1.4em;
+}
+
+alert {
+  font-family: Lato, Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+em, i {
+	font-style:italic;
+}
+
+div.section {
+  clear: both;
+  margin-bottom: 1.5em;
+  background: #eee;
+}
+
+div.spanner {
+  clear: both;
+}
+
+div.paper {
+  clear: both;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 1em 1em 1em 1em;
+}
+
+div.paper div {
+  padding-left: 230px;
+}
+
+img.paper {
+  margin-bottom: 0.5em;
+  float: left;
+  width: 200px;
+}
+
+span.blurb {
+  font-style:italic;
+  display:block;
+  margin-top:0.75em;
+  margin-bottom:0.5em;
+}
+
+pre, code {
+  font-family: 'Lucida Console', 'Andale Mono', 'Courier', monospaced;
+  margin: 1em 0;
+  padding: 0;
+}
+
+div.paper pre {
+  font-size: 0.9em;
+}
+</style>
+
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /><!--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>--><!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>--><!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>-->
 </head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66888300-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">IrfanICMLL</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">workpage</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
+<div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 140px;">
+<div style="margin: 0px auto; width: 100%;">
+<img title="YifanLiu" style="float: left; padding-left: .01em; height: 140px;" src="yifan.png" />
+<div style="padding-left: 12em; vertical-align: top; height: 120px;"><span style="line-height: 150%; font-size: 20pt;">Tong He</span><br />
+<span><strong>PhD candidate</strong></span><br /> 
+<span><strong>Email  </strong>: yifan[dot]liu04[at]adelaide[dot]edu[dot]au</span> <br /> 
+<span>I am a computer science PhD student at the <a href='https://www.adelaide.edu.au/'>University of Adelaide</a> and supervised by <a href='http://cs.adelaide.edu.au/~chhshen/'>Chunhua Shen</a> .</span>
+</div>
+</div>
+</div>
+<!--<div style="clear: both; background-color: #fff; margin-top: 1.5em; padding: .2em; padding-left: .3em;">-->
+
+<div style="clear: both;">
+<div class="section">
+<h2>(<a href='https://scholar.google.com/citations?user=ksQ4JnQAAAAJ&hl=zh-CN'>Google scholar</a>)</h2>
+<div class="paper">
+Before I came to Adelaide, I was a visiting student at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/'>MSRA</a> under the supervision of Prof.<a href='https://jingdongwang2017.github.io/'>Jingdong Wang</a>. I got my master degree and my B.Sc. degree at School of <a href = 'asee.buaa.edu.cn'>Automation Science and Electrical Engineering</a> at <a href='https://ev.buaa.edu.cn/'>Beihang University</a> supervised by Prof.<a href='http://dsd.future-lab.cn/members/qin.html'>Zengchang Qin</a>.
+<br> <br>
+</div>
+</div>
+</div>
+
+<div style="clear: both;">
+<div class="section">
+  <h2>News</h2>
+  <div class="paper">
+    <ul>
+    <li> Mar, 2019: One <a href='2019.thecvf.com/'>CVPR</a> papers have been accepted (Oral:288/5160). </li>
+    <li> Feb, 2019: We are the 3nd winner for AI Edge Contest, on <a href='https://signate.jp/competitions/143/leaderboard'>Semantic segmentation </a> (3/90). </li>
+    <li> Nov, 2018: Come to Adelaide University for PhD career </li>
+    </ul>
   </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/30/hello-world/" class="article-date">
-  <time datetime="2017-08-30T14:19:32.175Z" itemprop="datePublished">2017-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/30/hello-world/">Hello World</a>
-    </h1>
-  
+</div>
+</div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/30/hello-world/" data-id="cj6z5pr980001d0svzgf8zexi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+<div style="clear: both;">
+<div class="section">
+<h2 id="confpapers">Publications</h2>
 
 
-  
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a></li></ul>
-    </div>
-  </div>
+<div class="paper" id="CVPR2019"><img class="paper" src="papers/cvpr.png" title="Structured Knowledge Distillation for Semantic Segmentation" />
+<div> <strong>Structured Knowledge Distillation for Semantic Segmentation</strong><br />
+<strong>Yifan Liu</strong>, Ke Chen, Chris Liu, Zengchang Qin, Zhenbo Luo, Jingdong Wang<br />
+Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2019, <alert>[oral]</alert><br /> 
+<a href='https://arxiv.org/pdf/1903.04197.pdf'>[PDF]</a>
+<a href='https://github.com/irfanICMLL/structure_knowledge_distillation'>[Code]</a>
+</div>
+<div class="spanner"></div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/08/30/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<div class="paper" id="ICASSP"><img class="paper" src="papers/icassp.png" title="Pixel Level Data Augmentation for Semantic Image Segmentation using Generative Adversarial Networks" />
+<div> <strong>Pixel Level Data Augmentation for Semantic Image Segmentation using Generative Adversarial Networks</strong><br />
+Shuangting Liu, Jiaqi Zhang, Yuxin Chen,<strong>Yifan Liu</strong>, Zengchang Qin, Tao Wan <br />
+IEEE International Conference on Acoustics, Speech and Signal Processing (<strong>ICASSP</strong>), 2019, <alert>[oral]</alert><br /> 
+<a href='https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8683590'>[PDF]</a>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 Irfan<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+</div>
+<div class="spanner"></div>
+</div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<div class="paper" id="PAKDD2018"><img class="paper" src="papers/pakdd.png" title="Emotion Classification with Data Augmentation Using Generative Adversarial Networks" />
+<div> <strong>Emotion Classification with Data Augmentation Using Generative Adversarial Networks</strong><br />
+Xinyue Zhu*, <strong>Yifan Liu*</strong>, Zengchang Qin, and Jiahong Li<br />  
+Pacific-Asia Conference on Knowledge Discovery and Data Mining (<strong>PAKDD</strong>), 2018, <alert>[oral]</alert><br /> 
+<a href='https://arxiv.org/pdf/1711.00648v5.pdf'>[PDF]</a>
+<a href='https://github.com/SharonZhu/Data-augmentation-using-GAN'>[code]</a>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+</div>
+<div class="spanner"></div>
+</div>
+
+<div class="paper" id="journals"><img class="paper" src="papers/neurocomputing.png" title="Auto-painter: Cartoon image generation from sketch by using conditional Wasserstein generative adversarial networks" />
+<div> <strong>Auto-painter: Cartoon image generation from sketch by using conditional Wasserstein generative adversarial networks</strong><br />
+<strong>Yifan Liu</strong>, Zengchang Qin, Tao Wan, Zhenbo Luo  <br />
+Neurocomputing (<strong>Neurocomputing</strong>), 2018<br /> 
+<a href='https://www.sciencedirect.com/science/article/pii/S0925231218306209'>[PDF]</a>
+<a href='https://youtu.be/g9rf-YFGgbg'>[demo]</a>
+<a href='https://youtu.be/g9rf-YFGgbg'>[code]</a>
+
+</div>
+<div class="spanner"></div>
+</div>
 
 
-<script src="/js/script.js"></script>
+<div class="paper" id="IEA/AIE"><img class="paper" src="papers/ieaaie.png" title="Stock Volatility Prediction Using Recurrent Neural Networks with Sentiment Analysis" />
+<div> <strong>Stock Volatility Prediction Using Recurrent Neural Networks with Sentiment Analysis</strong><br />
+<strong>Yifan Liu</strong>, Zengchang Qin, Pengyu Li, and Tao Wan <br />
+International Conference on Industrial, Engineering & Other Applications of Applied Intelligent Systems (<strong>IEA/AIE</strong>), 2017<alert>[oral]</alert><br />
+<a href='https://arxiv.org/pdf/1705.02447.pdf'>[PDF]</a>
+<a href='https://github.com/irfanICMLL/EMM-for-stock-prediction'>[code]</a>
 
-  </div>
+</div>
+<div class="spanner"></div>
+</div>
+
+
+<div class="paper" id="pacling"><img class="paper" src="papers/ll.png" title="Logical Parsing from Natural Language Based on a Neural Translation Model" />
+<div> <strong>Logical Parsing from Natural Language Based on a Neural Translation Model</strong><br />
+<strong>Yifan Liu*</strong>, Liang Li*, Zengchang Qin, Pengyu Li, Tao Wan<br />
+Conference of the Pacific Association for Computational Linguistics (<strong>PACLING</strong>), 2017<alert>[oral]</alert><br />
+<a href='https://arxiv.org/pdf/1705.03389'>[code]</a> <br />
+</div>
+</div>
+
+
+<div style="clear: both;">
+<div class="section">
+<h2 id="confpapers">Professional activities</h2>
+<div class="paper">
+<ul>
+<p><strong><font size="5"> Journals</font></p></strong>
+<p><font size="5">Neurocomputing</font></p>
+<p><strong><font size="5"> Conferences</font></p></strong>
+<p><font size="5"></font></p>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div style="clear: both;">
+<div class="section">
+<h2 id="confpapers">Contests</h2>
+<div class="paper">
+<ul>
+<li><strong>AI Edge Contest, on <a href='https://signate.jp/competitions/143/leaderboard'>Semantic segmentation </a> <strong>Rank</strong>: 3/90</li>
+<li><strong>“ZhiYin maker” business plan competition,  <strong>Rank</strong>: 2/207.</li>
+
+
+</ul>
+<div class="spanner"></div>
+</div>
+</div>
+</div>
+
+<div style="clear: both;">
+<div class="section"><h2>Awards</h2>
+<div class="paper">
+<li><strong>“The outstanding graduates of Beijing”, 2016</li>
+</div>
+</div>
+</div>
+
+<div style="clear: both;">
+<div class="section"><h2>Friends</h2>
+<div class="paper">
+<a href='https://github.com/tianzhi0549'>Zhi Tian</a> (Adelaide Uni),
+<a href='https://tonghe90.github.io/'>Tong He</a> (Adelaide Uni),
+<a href="https://github.com/sunke123/">Ke Sun</a> (USTC),
+<a href="https://github.com/PkuRainBow">Yuhui Yuan</a> (MSRA),
+</div>
+</div>
+</div>
+
+
+<div style="clear:both;">
+<p align="right"><font size="5">Last Updated on 27th May, 2019</a></font></p>
+<p align="right"><font size="5">Published with <a href='https://pages.github.com/'>GitHub Pages</a></font></p>
+</div>
+
+<hr>
+<div id="clustrmaps-widget"></div><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=2qC7&d=moSsaMzezP5mVgywsQ3_t_xX8z9yNx7f1iPUVR5tuQE"></script>
+
 </body>
 </html>
